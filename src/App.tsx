@@ -1,11 +1,13 @@
 
+import Navbar from '@/scenes/navbar'
+
 
 function App() {
 
 
   return (
-    <div className="app">
-      <p className="text-center">12344</p>
+    <div className="app bg-gray-20">
+      <Navbar />
     </div>
   )
 }
