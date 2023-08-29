@@ -5,7 +5,8 @@ import {SelectedPage} from '@/shared/types'
 import {Home} from '@/scenes/home'
 import {Benefits} from '@/scenes/benefits'
 import { OurClasses } from '@/scenes/ourClasses'
-
+import {ContactUs} from '@/scenes/contactUs'
+import {Footer} from '@/scenes/footer'
 
 function App() {
 
@@ -33,7 +34,8 @@ return  ()=>window.removeEventListener('scroll', handleScroll)
       <Home setSelectedPage={setSelectedPage} />
       <Benefits setSelectedPage={setSelectedPage} />
       <OurClasses setSelectedPage={setSelectedPage} />
-
+      <ContactUs setSelectedPage={setSelectedPage} />
+      <Footer />
     </div>
   )
 }
