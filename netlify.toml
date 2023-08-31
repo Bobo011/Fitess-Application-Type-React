@@ -1,0 +1,3 @@
+[build]
+publish = "dist" # This should match your Vite build output directory
+command = "npm run build"
