@@ -8,7 +8,7 @@ import image6 from '@/assets/image6.png'
 import { motion } from "framer-motion";
 import { HText } from '@/shared/HText'
 import {Class} from './Class';
-
+// Define an array of classes with their details.
 const classes: Array<ClassType> = [
 	{
 		name: "Weight Training Classes",
@@ -67,6 +67,7 @@ export const OurClasses = ({ setSelectedPage }: Props) => {
 					className='mx-auto w-5/6'
 				>
 					<div className='md:w-3/5'>
+						{/* Placeholder text for class description */}
 						<HText>OUR CLASSES</HText>
 						<p className='py-5'>
 							Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
@@ -79,6 +80,7 @@ export const OurClasses = ({ setSelectedPage }: Props) => {
 				</motion.div>
 				<div className='mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden'>
 <ul className='w-[2800px] whitespace-nowrap'>
+ {/* Map through the 'classes' array and render individual class components. */}
 {classes.map((item: ClassType,index)=>(
 	<Class
 	key ={`${item.name}-${index}`}
